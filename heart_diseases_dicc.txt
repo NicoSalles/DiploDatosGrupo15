@@ -1,0 +1,16 @@
+male: binaria de si es varón o no
+age: edad
+education: no explica que es, pero asumo que distintos niveles de educación. No usar si no desean
+currentSmoker: binaria de si es fumador actualmente o no
+cigsPerDay: cigarrillos por día
+BPMeds: binaria de si el paciente toma medicación para le presión.
+prevalentStroke: binaria de si tuvo un accidente cerebrovascular anteriormente
+prevalentHyp: binaria de hipertensión.
+diabetes: binaria de diabetes
+totChol: nivel de colesterol
+sysBP: presión arterial sistólica
+diaBP: presión arterial diastólica 
+BMI: índice de masa corporal
+heartRate: ritmo cardiaco
+glucosa: nivel de glucosa
+TenYearCHD: riesgo de enfermedad coronaria
