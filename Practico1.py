@@ -21,21 +21,27 @@ print('Resumen \n',tabla.describe())
 #Limpieza de los datos
 print('Se suprime la columna "education" porque la consideramos prescindible')
 tabla.drop('education', axis = 1,inplace=True)#Prescindimos de la columna Education
-#print(tabla) Funciona
 
+salida=fun.correlacion(tabla)
+print('Valores más altos de correlación: \n', salida)
+
+fun.cajas(tabla)
+fun.histogramas(tabla)
+fun.prueba_hipotesis(tabla)
 """
-fun.grafico_simple()
+
 fun.graficos_multiples_ventana_simple()
 fun.graficos_en_multiples_paneles()
 #Funcionan
 """
 
-correlaciones=tabla.corr()
-print(correlaciones)
-"""
-sns.heatmap(correlaciones, annot=True)#Funciona
-plt.show()
-"""
+#correlaciones=tabla.corr()
+
+
+#sns.heatmap(correlaciones, annot=True)#Funciona
+
+
+
 
 """
 #15/07/24: Eliminación de la columna education
@@ -43,6 +49,10 @@ plt.show()
            Generación del heatmap de correlaciones
            Inicio de la limpieza del dataset
 
-16/07/2024: Creo el archivo funciones.py
-17/07/2024: Escribí funciones de gráficos en funciones.py 
+16/07/24: Creo el archivo funciones.py
+17/07/24: Escribí funciones de gráficos en funciones.py 
+19/07/24: Escribí algo para ordenar los valores de la matriz de correlaciones
+21/07/24: Creé la función para la correlación
+22/07/24: Hice los histogramas
+23/07/24: Trabajé en la función prueba_de_hipótesis
 """
