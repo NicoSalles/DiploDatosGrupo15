@@ -28,19 +28,9 @@ print('Valores más altos de correlación: \n', salida)
 fun.cajas(tabla)
 fun.histogramas(tabla)
 fun.prueba_hipotesis(tabla)
-"""
-
-fun.graficos_multiples_ventana_simple()
-fun.graficos_en_multiples_paneles()
-#Funcionan
-"""
-
-#correlaciones=tabla.corr()
-
-
-#sns.heatmap(correlaciones, annot=True)#Funciona
-
-
+resultado, predicciones_clases=fun.regresion_logistica(tabla)
+if predicciones_clases is not None:
+    fun.confusion(tabla, predicciones_clases)
 
 
 """
@@ -55,4 +45,7 @@ fun.graficos_en_multiples_paneles()
 21/07/24: Creé la función para la correlación
 22/07/24: Hice los histogramas
 23/07/24: Trabajé en la función prueba_de_hipótesis
+24/07/24: Matriz de confusión
+25/07/24: Regresión logística
+26/07/24: 
 """
